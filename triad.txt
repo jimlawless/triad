@@ -1,0 +1,19 @@
+rem This is Triad.  
+
+com ! 
+  Triad is an esoteric programming language based on three-letter 
+  words as identifiers.  The runtime will consist of built-int procedures,
+  user-defined procedures, integer variables, and string variables.
+
+  Once a built-in proc takes over execution of a sequence of characters, 
+  that proc will institute its own syntax rules.
+!
+
+rem Let's start with the bare-bones Triad interpreter.
+
+prt !Hi, everyone.  This is "Triad".! nwl
+def grt ; prt !Inside of greeting word.! nwl end ;
+prt !You're going to get greeted three times.! nwl 
+inv grt inv grt inv grt
+end
+
